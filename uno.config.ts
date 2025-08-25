@@ -16,10 +16,38 @@ const tokens = defineTokenSystem({
   colors: {
     primary: {
       themes: {
-        light: '#ffffff',
-        dark: '#000000',
+        light: 'oklch(0.84 0.18 159 / 100%)',
+        dark: 'oklch(0.84 0.18 159 / 100%)',
       },
     },
+    secondary: {
+      themes: {
+        light: 'oklch(0.84 0.18 257 / 100%)',
+        dark: 'oklch(0.84 0.18 257 / 100%))',
+      },
+    },
+    warning: {
+      themes: {
+        light: 'oklch(0.84 0.18 26 / 100%)',
+        dark: 'oklch(0.84 0.18 26 / 100%)',
+      },
+    },
+  },
+  spacing: {
+    sm: '8px',
+    md: '16px',
+    lg: '24px',
+  },
+  rounded: {
+    sm: '4px',
+    md: '8px',
+    lg: '16px',
+  },
+  sizes: {
+    sm: '100px',
+    md: '200px',
+    lg: '300px',
+    full: '100%',
   },
 })
 
