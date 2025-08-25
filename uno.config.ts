@@ -49,6 +49,9 @@ const tokens = defineTokenSystem({
     lg: '300px',
     full: '100%',
   },
+  borderWidths: {
+    thin: '1px',
+  },
 })
 
 export default defineConfig({
