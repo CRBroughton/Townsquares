@@ -11,27 +11,20 @@ import {
   transformerVariantGroup,
 } from 'unocss'
 
+function generateOKLCHToken(token: `oklch(${string})`) {
+  return {
+    themes: {
+      light: token,
+      dark: token,
+    },
+  }
+}
 const tokens = defineTokenSystem({
   name: 'token-system',
   colors: {
-    primary: {
-      themes: {
-        light: 'oklch(0.84 0.18 159 / 100%)',
-        dark: 'oklch(0.84 0.18 159 / 100%)',
-      },
-    },
-    secondary: {
-      themes: {
-        light: 'oklch(0.84 0.18 257 / 100%)',
-        dark: 'oklch(0.84 0.18 257 / 100%))',
-      },
-    },
-    warning: {
-      themes: {
-        light: 'oklch(0.84 0.18 26 / 100%)',
-        dark: 'oklch(0.84 0.18 26 / 100%)',
-      },
-    },
+    primary: generateOKLCHToken('oklch(0.84 0.18 159 / 100%)'),
+    secondary: generateOKLCHToken('oklch(0.84 0.18 257 / 100%)'),
+    warning: generateOKLCHToken('oklch(0.84 0.18 26 / 100%)'),
   },
   spacing: {
     sm: '8px',

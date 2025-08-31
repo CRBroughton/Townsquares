@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "../townsquares-relay"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"conventionalCommits.scopes": [
+			"relay",
+			"relay-manager",
+			"dependencies",
+			"deployment",
+			"logging",
+			"tokens",
+			"components"
+		]
+	}
+}

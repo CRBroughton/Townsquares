@@ -1,5 +1,5 @@
 import checker from 'vite-plugin-checker'
-import { pwa } from './app/config/pwa'
+// import { pwa } from './app/config/pwa'
 import { appDescription } from './app/constants/index'
 
 export default defineNuxtConfig({
@@ -99,7 +99,7 @@ export default defineNuxtConfig({
     strategy: 'no_prefix',
   },
 
-  pwa,
+  // pwa,
 
   storybook: {
     port: 6006,

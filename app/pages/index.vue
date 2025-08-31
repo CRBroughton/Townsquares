@@ -3,7 +3,7 @@ definePageMeta({
   layout: 'home',
 })
 
-const online = useOnline()
+// const online = useOnline()
 
 const { locales, setLocale } = useI18n()
 </script>
@@ -21,24 +21,6 @@ const { locales, setLocale } = useI18n()
       </Button>
       <h1>{{ $t('welcome') }}</h1>
     </div>
-    <ClientOnly>
-      <Suspense>
-        <PageView v-if="online" />
-        <div v-else text-gray:80>
-          You're offline
-        </div>
-        <template #fallback>
-          <div op50 italic>
-            <span animate-pulse>Loading...</span>
-          </div>
-        </template>
-      </Suspense>
-      <template #fallback>
-        <div op50>
-          <span animate-pulse>...</span>
-        </div>
-      </template>
-    </ClientOnly>
-    <InputEntry />
+    <ThemeSelector />
   </div>
 </template>
