@@ -10,7 +10,6 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     '@nuxt/eslint',
-    '@nuxtjs/storybook',
     '@nuxtjs/i18n',
   ],
 
