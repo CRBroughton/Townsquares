@@ -55,6 +55,7 @@
     "i18n/locales"
   ],
   "conventionalCommits.scopes": [
-    "tokens"
+    "tokens",
+    "dependencies"
   ]
 }
