@@ -45,6 +45,23 @@ const tokens = defineTokenSystem({
   borderWidths: {
     thin: '1px',
   },
+  effects: {
+    opacity: {
+      30: 0.3,
+      50: 0.5,
+    },
+  },
+  typography: {
+    fonts: {
+      sans: 'DM Sans, ui-sans-serif, system-ui, sans-serif',
+    },
+    sizes: {
+      sm: '12px',
+      base: '16px',
+      md: '18px',
+      lg: '21px',
+    },
+  },
 })
 
 export default defineConfig({
